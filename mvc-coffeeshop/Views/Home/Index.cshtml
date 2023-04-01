@@ -1,69 +1,538 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div>
-    <div class="jumbotron text-center shadow p-3 mb-5 rounded" style="background-image: url('images/Coffee_beans.jpg'); background-size: cover">
-        <h1 class="display-4">¡Bienvenido!</h1>
-        <p class="lead">¡La mejor experiencia te espera!</p>
-        <hr class="my-4">
-        <p lass="lead">Esperamos brindarte el mejor servicio.</p>
-        <p class="lead">
-            <a class="btn btn-warning btn-lg" href="#" role="button">Ver Menú</a>
-        </p>
-        <br/>
-    </div>
-    <div class="text-center">
-        <h1 class="display-6">Favoritos</h1>
-        <p>La mejor experiencia te espera.</p>
-        @Html.Partial("_GridCards")
-    </div>
-    <br/>
-    <div class="text-center">
-        <h1 class="display-6">Postres</h1>
-        <p>La mejor experiencia te espera.</p>
-        @Html.Partial("_GridCards")
-    </div>
-    <br/><br/>
-    <div class="jumbotron shadow p-3 mb-5 rounded bg-black" style="background-image: url('images/Coffee_beans_no_bckg.png'); background-size: cover">
-        <h1 class="display-6">Menu</h1>
-        <p class="lead">¡La mejor experiencia te espera!</p>
-        <hr class="my-4">
-        <p lass="lead">Esperamos brindarte el mejor servicio.</p>
-        <p class="lead">
-            <a class="btn btn-warning btn-lg" href="#" role="button">Ver Menú</a>
-        </p>
-    </div>
-    <br/>
-    <div class="text-center">
-        <h1 class="display-6">Promociones</h1>
-        <p>La mejor experiencia te espera.</p>
+  <!-- start home section  -->
 
-        <div id="carouselExampleIndicators shadow p-3 mb-5 rounded" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/360_F_234631554_fFopmou1B5oeEIeFZZUWLPjfXupNG5am.jpg" class="d-block w-100" alt="...">
+    <div class="home-section" id="home">
+        <div class="home-content">
+            <h1>Let's enjoy with our <br> beautiful coffee</h1>
+            <p>
+                Affordable prices for everyone, so give us an opportunity <br> for evaluation.
+            </p>
+            <div class="home-links">
+                <div class="first">
+                    <a href="#">testy coffee</a>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/360_F_234631554_fFopmou1B5oeEIeFZZUWLPjfXupNG5am.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/360_F_234631554_fFopmou1B5oeEIeFZZUWLPjfXupNG5am.jpg" class="d-block w-100" alt="...">
+                <div class="second">
+                    <a href="#">read more</a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
-    <br/>
-</div>
+
+    <!-- end home section  -->
+
+    <!-- start section two  -->
+
+    <div class="bg-service">
+        <div class="service-one">
+            <img src="images/img1.jpg" alt="">
+            <div class="overlay">
+                <div class="over-txt">
+                    <p>for drinks</p>
+                    <h4>
+                        coffee & drinks
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="service-one">
+            <img src="images/img2.jpg" alt="">
+            <div class="overlay">
+                <div class="over-txt">
+                    <p>for entertainment</p>
+                    <h4>
+                        beans & sweets
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="service-one">
+            <img src="images/img3.jpg" alt="">
+            <div class="overlay">
+                <div class="over-txt">
+                    <p>for food</p>
+                    <h4>
+                        croissant & cakes
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section two  -->
+
+    <!-- start section three  -->
+
+    <div class="bg-shop" id="shop">
+        <div class="shop-links">
+            <div>
+                <h2>products</h2>
+            </div>
+            <div class="links">
+                <li data-filter="all">all</li>
+                <li data-filter=".coffee">coffee</li>
+                <li data-filter=".machines">machines</li>
+                <li data-filter=".sweets">sweets</li>
+            </div>
+        </div>
+        <div class="shop-flex consts">
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="images/picture-1.png" alt="">
+                    <div class="price">
+                        -7%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $32.00
+                </article>
+                <span>
+                    $45.00
+                </span>
+            </div>
+
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="images/picture-2.png" alt="">
+                    <div class="price">
+                        -12%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $82.00
+                </article>
+                <span>
+                    $95.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="images/picture-3.png" alt="">
+                    <div class="price">
+                        -13%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $84.00
+                </article>
+                <span>
+                    $102.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="images/picture-4.png" alt="">
+                    <div class="price">
+                        -6%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $66.00
+                </article>
+                <span>
+                    $85.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix machines">
+                <div class="shop-image">
+                    <img src="images/m1.png" alt="">
+                    <div class="price">
+                        -20%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>coffee machines</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $203.00
+                </article>
+                <span>
+                    $250.00
+                </span>
+            </div>
+
+            <div class="shop1 mix machines">
+                <div class="shop-image">
+                    <img src="images/m2.png" alt="">
+                    <div class="price">
+                        -5%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>coffee machines</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                </div>
+                <article>
+                    $265.00
+                </article>
+                <span>
+                    $293.00
+                </span>
+            </div>
+
+            <div class="shop1 mix machines">
+                <div class="shop-image">
+                    <img src="images/m3.png" alt="">
+                    <div class="price">
+                        -7%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>coffee machines</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $160.00
+                </article>
+                <span>
+                    $192.00
+                </span>
+            </div>
+
+            <div class="shop1 mix sweets">
+                <div class="shop-image">
+                    <img src="images/m4.png" alt="">
+                    <div class="price">
+                        -15%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee</h2>
+                <div class="stars">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $28.00
+                </article>
+                <span>
+                    $66.00
+                </span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- end section three  -->
+
+    <!-- start section four  -->
+    
+    <div class="bg-menu" id="menu">
+        <div class="menu-title">
+            <section>what happens here</section>
+            <h2>time for coffee</h2>
+            <hr>
+        </div>
+        <div class="menu-flex">
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup1.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$3.86</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup2.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$4.72</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup3.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$2.45</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup4.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$5.95</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup6.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$7.02</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup8.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$6.25</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup7.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$4.00</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup8.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$5.21</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup9.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$3.16</h4>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <div class="small-image">
+                    <img src="images/cup10.jpg" alt="">
+                </div>
+                <div>
+                    <h4>caffee latte</h4>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h4>$4.95</h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu-link">
+            <a href="#">view menu</a>
+        </div>
+    </div>
+
+   <!-- end section four  -->
+
+   
+    <!-- start section five  -->
+
+    <div class="bg-gallery">
+        <div class="gallery-flex">
+            <div class="image-one event">
+                <img src="images/gallery1.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+            <div class="inside-gallery">
+                <div class="left">
+                    <div class="event">
+                        <img src="images/gallery2.jpg" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="event">
+                        <img src="images/gallery3.jpg" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="event">
+                        <img src="images/gallery4.jpg" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="event">
+                        <img src="images/gallery5.jpg" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-image event">
+                <img src="images/gallery6.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section five  -->
+
+
+    <!-- start section six  -->
+
+    <div class="bg-about" id="about">
+        <div class="about-flex">
+            <div class="about1">
+                <div>
+                    <img src="images/about1.jpg" alt="">
+                </div>
+                <div class="image-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="about1">
+                <div>
+                    <img src="images/about2.jpg" alt="">
+                </div>
+                <div class="about1-txt">
+                    <h3>opening hours & <br> reservations</h3>
+                    <div class="txt-inside">
+                        <section>saturday - friday</section>
+                        <section>9.00am - 9.00pm</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section six  -->

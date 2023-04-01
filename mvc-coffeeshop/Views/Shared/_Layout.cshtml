@@ -9,51 +9,108 @@
     <link rel="stylesheet" href="~/testapp_rider.styles.css" asp-append-version="true"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body class="bg-dark text-light">
-<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Coffee Shop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Postres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Acerca De Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Contacto</a>
-                    </li>
-                </ul>
+<body>
+
+    <div class="info">
+        <div class="info-left">
+            <section>
+                <i class="fas fa-phone"></i> +123-456-789
+            </section>
+            <section>
+                <i class="fas fa-envelope"></i> info@gmail.com
+            </section>
+        </div>
+        <div class="info-right">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="info-link">
+                <a href="#">shop now</a>
             </div>
         </div>
-    </nav>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2023 - Coffee Shop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
-</footer>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+
+    <!-- start header section  -->
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <nav class="navigation">
+            <li><a href="#home">home</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+        </nav>
+        <div class="bars">
+            <img src="images/menu.png" alt="" class="bar">
+        </div>
+    </header>
+    <!-- end header section  -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- start footer section  -->
+
+    <div class="footer" id="contact">
+        <div class="footer-flex">
+            <div class="footer1">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+                <section>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi nobis qui? Vero cumque iure velit quibusdam.
+                </section>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer1">
+                <h3>contact info</h3>
+                <div class="location">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <a href="#">our location</a>
+                    <section>egypt, el gharbia, kz</section>
+                </div>
+                <div class="location">
+                    <span><i class="fas fa-phone"></i></span>
+                    <a href="#">our phone</a>
+                    <section>+015-544-084-94</section>
+                    <section>+015-544-084-94</section>
+                </div>
+            </div>
+            <div class="footer1">
+                <h3>subscribe</h3>
+                <form action="">
+                    <input type="email" name="" id="" placeholder="your Email">
+                    <a href="#">subscribe</a>
+                </form>
+                <div class="check">
+                    <input type="checkbox" name="" id="inpt">
+                    <label for="inpt">I have read and agree to all terms & conditions.</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="mixitup.min.js"></script>
+    <script>var mixer = mixitup('.consts');</script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
