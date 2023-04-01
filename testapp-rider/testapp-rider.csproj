@@ -7,4 +7,10 @@
         <RootNamespace>testapp_rider</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Update="Views\Shared\_Banner.cshtml.css">
+        <DependentUpon>_Banner.cshtml</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>

@@ -16,3 +16,15 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.contenedor-imagen {
+  max-width: 100%; /* Ancho máximo del contenedor */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  text-align: center; /* Centrar horizontalmente */
+}
+.contenedor-imagen img {
+  max-width: 100%; /* Ancho máximo de la imagen */
+  max-height: 50vh; /* Altura máxima de la imagen */
+  height: auto; /* Altura automática para mantener la proporción de aspecto */
+}
