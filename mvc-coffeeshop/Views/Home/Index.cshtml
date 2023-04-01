@@ -2,26 +2,68 @@
     ViewData["Title"] = "Home Page";
 }
 <div>
-    <div class="text-center">
-            <h1 class="display-4">Bienvenidos!</h1>
-        </div>
-    <div class="contenedor-imagen">
-        <img src="images/coffee_07.jpg"/>
+    <div class="jumbotron text-center shadow p-3 mb-5 rounded" style="background-image: url('images/Coffee_beans.jpg'); background-size: cover">
+        <h1 class="display-4">¡Bienvenido!</h1>
+        <p class="lead">¡La mejor experiencia te espera!</p>
+        <hr class="my-4">
+        <p lass="lead">Esperamos brindarte el mejor servicio.</p>
+        <p class="lead">
+            <a class="btn btn-warning btn-lg" href="#" role="button">Ver Menú</a>
+        </p>
+        <br/>
     </div>
     <div class="text-center">
         <h1 class="display-6">Favoritos</h1>
         <p>La mejor experiencia te espera.</p>
+        @Html.Partial("_GridCards")
     </div>
-    <div class="text-center">
-        <h1 class="display-6">Menú</h1>
-        <p>La mejor experiencia te espera.</p>
-    </div>
+    <br/>
     <div class="text-center">
         <h1 class="display-6">Postres</h1>
         <p>La mejor experiencia te espera.</p>
+        @Html.Partial("_GridCards")
     </div>
+    <br/><br/>
+    <div class="jumbotron shadow p-3 mb-5 rounded bg-black" style="background-image: url('images/Coffee_beans_no_bckg.png'); background-size: cover">
+        <h1 class="display-6">Menu</h1>
+        <p class="lead">¡La mejor experiencia te espera!</p>
+        <hr class="my-4">
+        <p lass="lead">Esperamos brindarte el mejor servicio.</p>
+        <p class="lead">
+            <a class="btn btn-warning btn-lg" href="#" role="button">Ver Menú</a>
+        </p>
+    </div>
+    <br/>
     <div class="text-center">
         <h1 class="display-6">Promociones</h1>
         <p>La mejor experiencia te espera.</p>
+
+        <div id="carouselExampleIndicators shadow p-3 mb-5 rounded" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/360_F_234631554_fFopmou1B5oeEIeFZZUWLPjfXupNG5am.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/360_F_234631554_fFopmou1B5oeEIeFZZUWLPjfXupNG5am.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/360_F_234631554_fFopmou1B5oeEIeFZZUWLPjfXupNG5am.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
+    <br/>
 </div>
