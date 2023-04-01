@@ -13,4 +13,10 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="wwwroot\images\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="wwwroot\images\" />
+    </ItemGroup>
 </Project>
