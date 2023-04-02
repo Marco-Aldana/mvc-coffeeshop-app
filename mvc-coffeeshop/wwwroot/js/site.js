@@ -8,10 +8,10 @@ function myNav() {
     bar.onclick = () => {
         if (nav.style.left == "0%") {
             nav.style.left = "-100%";
-            bar.src = "pic/menu.png"
+            bar.src = "images/menu.png"
         } else {
             nav.style.left = "0%";
-            bar.src = "pic/x.png"
+            bar.src = "images/x.png"
         }
     }
 }
