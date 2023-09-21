@@ -2,7 +2,7 @@
 
 Welcome to the Coffee Shop MVC web application repository! This project is a simple implementation of a coffee shop management system using the Model-View-Controller (MVC) architecture with C#.
 
-![Coffee Shop](https://raw.githubusercontent.com/Marco-Aldana/OnlineShop/main/MVC-OnlineShop/wwwroot/assets/img/demo-HomePage.png?token=GHSAT0AAAAAACHBVAXGLKLG2ZLSFDRTG3MGZILZTOA)
+![Coffee Shop](https://raw.githubusercontent.com/Marco-Aldana/OnlineShop/main/MVC-OnlineShop/wwwroot/assets/img/demo-HomePage.png?token=GHSAT0AAAAAACHBVAXGLKLG2ZLSFDRTG3MGZILZTOA)](https://github.com/Marco-Aldana/mvc-coffeeshop-app/blob/main/demo-HomePage.png?raw=true)
 
 ## Table of Contents
 
